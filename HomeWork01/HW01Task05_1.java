@@ -1,6 +1,5 @@
 package HomeWork01;
 
-import java.util.Objects;
 import java.util.Scanner;
 
 public class HW01Task05_1 {
@@ -9,14 +8,25 @@ public class HW01Task05_1 {
         System.out.print("Введите ваше имя: ");
         String userName = scan.nextLine();
 
-        if(Objects.equals("Вася", userName)){
+        String friendName = "Вася";
+        String girlName = "Анастасия";
+
+        boolean isFriend = friendName.equals(userName);
+        boolean isGirl = girlName.equals(userName);
+
+        if(isFriend){
             System.out.println("Привет!");
             System.out.println("Я тебя так долго ждал.");
         }
-        if(Objects.equals("Анастасия", userName)){
+        if(isGirl){
             System.out.println("Я тебя так долго ждал.");
         }
-        if(!Objects.equals("Вася", userName) && !Objects.equals("Анастасия", userName)){
+
+        //Для проверки влияния на дальнейший код
+        friendName = "Коля";
+        girlName = "Вероника";
+
+        if(!isFriend && !isGirl){
             System.out.println("Добрый день, а вы кто?");
         }
 

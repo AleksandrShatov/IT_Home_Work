@@ -8,12 +8,15 @@ public class HW01Task05_3 {
         System.out.print("Введите ваше имя: ");
         String userName = scan.next();
 
+        final String friendName = "Вася";
+        final String girlName = "Анастасия";
+
         switch (userName){
-            case "Вася":
+            case friendName:
                 System.out.println("Привет!");
                 System.out.println("Я тебя так долго ждал.");
                 break;
-            case "Анастасия":
+            case girlName:
                 System.out.println("Я тебя так долго ждал.");
                 break;
             default:
